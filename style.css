@@ -7,7 +7,13 @@ html,* {
 }
 
 body {
+    width: 100%;
+    height: 100%;
     overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 :root {
@@ -18,6 +24,11 @@ body {
     --bg-kesekian2:   #c6f598;
     --bg-kesekian3:  #cbe249;
     --bg-kesekian4: #deec8f;
+}
+
+.dark-mode {
+    background-color: var(--bg-second);
+    color: var(--bg-kesekian);
 }
 
 .container {
@@ -233,7 +244,7 @@ img {
 }
 
 .toggle-switch {
-    background-color: var(--bg-kesekian3);
+    background-color: var(--bg-kesekian4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -307,11 +318,14 @@ footer {
     text-align: center;
     opacity: 80%;
     padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .footer-media {
-    background-color:rgb(222, 236, 143);
-    width: 100%;
+    width: 100% ;
     height: 100%;
     display: flex;
     justify-content: center;
