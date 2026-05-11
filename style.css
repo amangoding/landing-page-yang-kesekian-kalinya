@@ -8,8 +8,10 @@ html,* {
 
 body {
     width: 100%;
-    height: 100%;
-    overflow: visible;
+    height: 100%; 
+    background-color: white;
+    color: black;
+    /* overflow: visible; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +24,7 @@ body {
     --bg-kesekian: #e8e8e8;
     --bg-kesekian1: #edfcdb;
     --bg-kesekian2:   #c6f598;
-    --bg-kesekian3:  #cbe249;
+    --bg-kesekian3:  #e9fb84;
     --bg-kesekian4: #deec8f;
 }
 
@@ -49,6 +51,7 @@ header {
    justify-content: space-between;
    align-items: center;
    background-color: var(--bg-kesekian4);
+   padding: 7px;
 }
 
 .logo{
@@ -82,7 +85,7 @@ ul {
 }
 
 li {
-    background-color:rgb(203, 226, 73);
+    background-color: var(--bg-kesekian3);
     border-radius: 20%;
     height: 29px;
     display: flex;
@@ -154,7 +157,7 @@ content {
 }
 
 .isi-kartu {
-    background-color: var(--bg-primary);
+    background-color: var(--bg-kesekian4);
     width: 13em;
     height: 14em;
     display: flex;
@@ -240,7 +243,7 @@ img {
     border-bottom-left-radius: 50px ;
     border-top: 12px solid transparent;
     border-bottom: 2px solid transparent;
-    border-right: 30px solid var(--bg-primary);
+    border-right: 30px solid var(--bg-kesekian3);
 }
 
 .toggle-switch {
