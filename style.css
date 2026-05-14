@@ -9,9 +9,8 @@ html,* {
 body {
     width: 100%;
     height: 100%; 
-    background-color: white;
-    color: black;
-    /* overflow: visible; */
+    /* background-color: white; */
+    /* color: black; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,17 +19,35 @@ body {
 
 :root {
     --bg-primary: #c4c4c4;
+    --text-color: rgb(57, 56, 56);
     --bg-second:#000000aa;
     --bg-kesekian: #e8e8e8;
-    --bg-kesekian1: #edfcdb;
+    --bg-kesekian1: #dffbbe;
     --bg-kesekian2:   #c6f598;
     --bg-kesekian3:  #e9fb84;
-    --bg-kesekian4: #deec8f;
+    --bg-kesekian4: #eca285;
 }
 
-.dark-mode {
-    background-color: var(--bg-second);
+[data-theme = 'dark'] {
+    --bg-primary: #c4c4c4;
+    --text-color: #393838;
+    --bg-second:#000000aa;
+    --bg-kesekian: #e8e8e8;
+    --bg-kesekian1: #8eaa68;
+    --bg-kesekian2:   #89b65f;
+    --bg-kesekian3:  #8e9950;
+    --bg-kesekian4: #9e380c;
+}
+
+.dark-mode .container{
+    background-color: var(--bg-kesekian1);
     color: var(--bg-kesekian);
+}
+
+.container, header, content, .isi-kartu, footer {
+    background-color: var(--bg-kesekian);
+    color: var(--bg-primary);
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .container {
@@ -51,7 +68,7 @@ header {
    justify-content: space-between;
    align-items: center;
    background-color: var(--bg-kesekian4);
-   padding: 7px;
+   padding: 5px;
 }
 
 .logo{
@@ -70,7 +87,7 @@ nav {
     display: flex;
     justify-content: end;
     flex-wrap: wrap;
-    margin-right: 4px;
+    margin-right: 0;
 }
 
 ul {
@@ -141,6 +158,7 @@ content {
     margin-top: 50px;
     flex-wrap: wrap;
     gap: 5px;
+    background-color: var(--bg-kesekian1);
 }
 
 .kartu-konten {
@@ -311,6 +329,13 @@ input:focus + .slider {
 input:checked + .slider:before {
   transform: translateX(26px);
   -ms-transform: translateX(26px);
+}
+
+.datalist {
+    width: 250px;
+    height: 90px;
+    background-color: var(--bg-kesekian4);
+    margin-bottom: 5px;
 }
 
 footer {

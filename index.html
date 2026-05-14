@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
     <link rel="stylesheet" href="style.css">
     <title>another landing page</title>
 </head>
@@ -15,7 +13,6 @@
     <div class="container">
         <header>
             <div class="logo">anuRubik.</div>
-
             <nav>
                 <ul>
                     <li>
@@ -33,6 +30,9 @@
                     </li>
                 </ul>
             </nav>
+            <div id="toggle-darkmode">
+                <button onclick="toggledark()">click me to dark mode</button>
+            </div>
         </header>
 
         <content>
@@ -67,6 +67,15 @@
                 <img src="media/Person solving a Rubiks Cube.jpg" class="rubik">
             </div>
         </content>
+        <div class="datalist">
+            <input list="anune" type="" id="datalist" />
+            <datalist id="anune">
+                <option value="react">react</option>
+                <option value="django"></option>
+                <option value="vue">vue</option>
+                <option value="angular">angular</option>
+            </datalist>
+        </div>
     </div>
 
     <div class="toggle-switch">
