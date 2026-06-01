@@ -1,14 +1,9 @@
-// function Darkmode() {
-//     let element = document.body;
-//     let toggleDarkmode = document.querySelector("#toggleDarkmode")
-//     let body = document.getElementsByTagName("body")
+const datalist = document.querySelector('.datalist')
+const elemenanune = document.createElement('p')
 
-//     if (toggleDarkmode.checked) {
-//        element.classList.toggle("dark-mode")
-//     } else {
-//        body
-//     }
-// }
+elemenanune.innerHTML = 'silahkan masukkan framework anda'
+
+datalist.append(elemenanune)
 
 function darkMode() {
     let element = document.body;
@@ -19,12 +14,6 @@ function darkMode() {
 function toggledark() {
     const root = document.body;
     const isDark = root.dataset.theme === 'dark';
-
-    if (root.dataset.theme === isDark) {
-        'dark'
-    } else {
-        'light'
-    }
 
     root.dataset.theme = isDark ? 'light' : 'dark'; 
 }

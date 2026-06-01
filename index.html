@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/31d33a80a1.js" crossorigin="anonymous"></script>
     <title>another landing page</title>
 </head>
 
@@ -31,7 +32,7 @@
                 </ul>
             </nav>
             <div id="toggle-darkmode">
-                <button onclick="toggledark()">click me to dark mode</button>
+                <button onclick="toggledark()" id="darkbtn">DARK MODE</button>
             </div>
         </header>
 
@@ -58,11 +59,11 @@
                 <img src="media/rubik.png">
                 <div class="btn">
                     tekan tombol di bawah ini jika <br>anda tertarik untuk bermain rubik
-                    <button>
-                        <a href="https://www.rubiks.com">
+                    <a href="https://www.rubiks.com">
+                        <button>
                             BUY
-                        </a>
-                    </button>
+                        </button>
+                    </a>
                 </div>
                 <img src="media/Person solving a Rubiks Cube.jpg" class="rubik">
             </div>
@@ -76,33 +77,33 @@
                 <option value="angular">angular</option>
             </datalist>
         </div>
+
+        <div class="toggle-switch">
+            <label class="toggle">
+                <input type="checkbox" id="toggleDarkmode" onchange="Darkmode()">
+                <span class="slider"></span>
+            </label>
+        </div>
     </div>
 
-    <div class="toggle-switch">
-        <label class="toggle">
-            <input type="checkbox" id="toggleDarkmode" onchange="Darkmode()">
-            <span class="slider"></span>
-        </label>
-    </div>
 
-    <div class="toggle-darkmode">
+    <!-- <div class="toggle-darkmode">
         <button onclick="darkMode()">click me to dark mode</button>
-    </div>
+    </div> -->
 
     <footer>
         <div class="footer-media">
             <a href="https://www.google.com">
-                <img src="media/google.png" id="footer-images">
+                <i class="icons fa-brands fa-google"></i>
             </a>
             <a href="mailto:kesumaaa34@gmail.com">
-                <img src="media/email.png" id="footer-images">
+                <i class='icons fa-solid fa-envelope'></i>
             </a>
             <a href="https://www.instagram.com">
-                <img src="media/instagram.png" id="footer-images">
+                <i class='icons fa-brands fa-instagram'></i>
             </a>
         </div>
         <div class="footer-text">
-            <h1>ini adalah footer</h1>
             <p>&copy; sumsum</p>
         </div>
     </footer>
